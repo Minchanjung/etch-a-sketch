@@ -1,19 +1,17 @@
 const container = document.getElementById("container");
-let rows = document.getElementsByClassName("rows");
-let columns = document.getElementsByClassName("columns");
+let rows;
+let cell;
 
-function grid() {
-    makeRows(16)
-    //makeColumns(16);
-}
+function makeGrid(dimension) {
+    for (i = 0; i < dimension; i++) {
+        rows = document.createElement("div");
+        container.appendChild(rows).className = "gridRow";
 
-function makeRows(rowNum) {
-    for (i = 0; i < rowNum; i++) {
-        let rowDiv = document.createElement("div");
-        container.appendChild(rowDiv).className = "row";
+        for (j = 0; j < dimension; j++) {
+            cell = document.createElement("div");
+            rows.appendChild(cell).className = "gridColumn";
+        }
     }
 }
 
-function makeColumns(colNum) {
-
-}
+makeGrid(16)

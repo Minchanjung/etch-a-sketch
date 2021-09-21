@@ -1,0 +1,22 @@
+#container {
+    display: flex;
+}
+
+.gridRow {
+    height: 20px;
+    width:20px;
+    display: grid;
+    flex-direction: column;
+    border-color: black;
+    border-width: 1px;
+    margin: 1px;
+}
+
+.gridColumn {
+    height: 20px;
+    width: 20px;
+    background-color: cadetblue;
+    border-color: black;
+    border-width: 1px;
+    margin: 1px;
+}
