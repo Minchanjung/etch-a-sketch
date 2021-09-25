@@ -22,7 +22,7 @@ function hover() {
     console.log(div);
     for (i = 0; i < div.length; i++) {
         div[i].addEventListener('mouseover', function (e) {
-            e.target.style.background = "white";
+            e.target.style.background = "black";
         })
     }
 }
@@ -33,7 +33,7 @@ function clearBoard() {
     console.log(clearBtn);
     clearBtn.addEventListener('click', () => {
         for (i = 0; i < div.length; i++) {
-            div[i].style.background = "black";
+            div[i].style.background = "white";
         }
     })
 }
